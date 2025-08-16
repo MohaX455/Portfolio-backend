@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Fichiers d’environnement
+.env
+.env.bak
+
+# Dossier build / dist
+dist/
+
+# Logs
+logs/
+*.log
+
+# MacOS
+.DS_Store
+
+# Autres fichiers temporaires
+*.tmp
