@@ -16,7 +16,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://mohax-portfolio.vercel.app/",
+    "http://localhost:5173"
+  ]
+}));
 app.use(express.json());
 
 // Connexion à la base de données MongoDB
