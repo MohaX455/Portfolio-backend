@@ -7,9 +7,7 @@ import database from './database/db.js';
 import mailRoutes from './routes/mailRoutes.js';
 
 const app = express();
-app.use(cors({
-    origin: '*',
-}))
+app.use(cors())
 dotenv.config({ debug: true });
 const PORT = process.env.PORT || 3000;
 
