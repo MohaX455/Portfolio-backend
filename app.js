@@ -41,5 +41,5 @@ app.use('/mail', mailRoutes);
 
 // Démarrage du serveur
 app.listen(PORT, () => {
-  console.log(`✅ Backend en écoute sur http://localhost:${PORT}`);
+  console.log(`✅ Backend en écout`);
 });
