@@ -7,6 +7,9 @@ import database from './database/db.js';
 import mailRoutes from './routes/mailRoutes.js';
 
 const app = express();
+app.use(cors({
+    origin: 'https://portfolio-backend-snx4.onrender.com',
+}))
 dotenv.config({ debug: true });
 const PORT = process.env.PORT || 3000;
 
