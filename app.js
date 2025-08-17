@@ -26,12 +26,12 @@ database();
 app.use('/mail', mailRoutes);
 
 // Sert les fichiers React buildés
-app.use(express.static(path.join(__dirname, 'dist')));
+// app.use(express.static(path.join(__dirname, 'dist')));
 
 //  Redirige toutes les routes vers index.html (SPA)
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-});
+// app.get(/.*/, (req, res) => {
+//   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+// });
 
 
 // Démarrage du serveur
